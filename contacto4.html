@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MAXIPET - Contacto</title>
+<link rel="icon" href="perrito.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8F8F8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* HEADER UNIFICADO (Opacidad y Centrado) */
+        .main-header-bar {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('blanco.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-color: #FFFFFF; 
+            padding: 20px 40px;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+            border-bottom: 3px solid #B8860B; 
+        }
+
+        .main-header-bar h1 {
+            color: #4B0082; 
+            text-shadow: 1px 1px 1px #ccc; 
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* BOTONES DE NAVEGACIÓN MORADITOS */
+        .history-nav a {
+            color: #4B0082; 
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+            text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+        }
+
+        .history-nav a:hover {
+            color: #E91E63;
+            text-decoration: underline;
+        }
+
+        /* MENÚ */
+        .main-menu {
+            padding: 15px 0;
+            font-size: 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: #4B0082;
+            padding: 0 10px;
+        }
+
+        /* CONTENIDO */
+        .content-section {
+            background-image: url('perrito.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-top: 8px solid #E91E63;
+        }
+
+        .form-container h2 {
+            font-size: 28px;
+            color: #4B0082;
+        }
+
+        .form-container p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .btn-submit {
+            background-color: #E91E63;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #4B0082;
+        }
+
+        /* FOOTER UNIFICADO */
+        .main-footer {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('blanco.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #FFFFFF; 
+            min-height: 180px;
+            color: #333; 
+            padding: 50px 20px; 
+            display: flex; 
+            justify-content: space-around; 
+            border-top: 8px solid #E91E63; 
+        }
+
+        .footer-column { width: 30%; }
+
+        .footer-column h3 {
+            color: #4B0082; 
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .footer-column a {
+            text-decoration: none;
+            color: #4B0082; 
+            font-weight: bold;
+        }
+
+        .footer-column a:hover {
+            color: #E91E63;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="main-header-bar">
+    <h1> MAXIPET - Contacto </h1>
+    <div class="history-nav">
+        <a href="articulo3.html">&laquo; Volver</a>
+        <a href="inicio1.html">Adelantar &raquo;</a>
+    </div>
+</header>
+
+<div class="main-menu">
+    <a href="inicio1.html">Inicio</a> |
+    <a href="introduccion2.html">Introducción</a> |
+    <a href="articulo3.html">Artículos</a> |
+    <a href="contacto4.html">Contacto</a>
+</div>
+
+<div class="content-section">
+    <div class="form-container">
+        <h2>¿Buscas algo específico?</h2>
+        <p>Envíanos tu consulta y te responderemos pronto.</p>
+
+        <form>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="tel" placeholder="Teléfono">
+            <textarea rows="4" placeholder="¿Qué artículo necesitas?"></textarea>
+            <button type="submit" class="btn-submit">Enviar Solicitud</button>
+        </form>
+    </div>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-column">
+        <h3>Contactos</h3>
+        <p>Email: proyerizel_2098@gmail.com<br>Teléfono: +507 678 905<br>Panamá.</p>
+    </div>
+    
+    <div class="footer-column">
+        <h3>Enlaces Útiles</h3>
+        <p>
+            <a href="https://www.purina.com.pa" target="_blank">Tips de Nutrición Animal</a><br>
+            <a href="#">Términos y Condiciones</a>
+        </p>
+    </div>
+    
+    <div class="footer-column">
+        <h3>Redes</h3>
+        <p>Instagram: rizelproyect<br>Facebook: rizelproyect</p>
+    </div>
+</footer>
+
+</body>
+</html>

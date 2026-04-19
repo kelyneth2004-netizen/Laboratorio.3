@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Platos y Dispensadores</title>
+<link rel="icon" href="perrito.png" type="image/png">
+<style>
+body {
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #4B0082;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.especial img {
+    object-fit: contain;
+    background: white;
+    padding: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Platos y Dispensadores</h1>
+<a href="articulo3.html">⬅ Volver</a>
+
+<div class="grid">
+
+    <div class="card especial"><img src="plato1.jpg"><p>Dispensador 1</p><p>$10.99</p></div>
+    <div class="card especial"><img src="plato2.jpg"><p>Dispensador 2</p><p>$15.99</p></div>
+    <div class="card"><img src="plato3.jpg"><p>Plato 1</p><p>$3.99</p></div>
+
+    <div class="card"><img src="plato4.jpg"><p>Plato 2</p><p>$7.99</p></div>
+    <div class="card especial"><img src="plato5.jpg"><p>Plato 3</p><p>$2.99</p></div>
+    <div class="card especial"><img src="plato6.jpg"><p>Plato 4</p><p>$1.99</p></div>
+
+</div>
+
+</body>
+</html>

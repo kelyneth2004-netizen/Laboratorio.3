@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MAXIPET - Introducción</title>
+<link rel="icon" href="perrito.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8F8F8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* HEADER UNIFICADO (Opacidad y Centrado) */
+        .main-header-bar {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('blanco.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-color: #FFFFFF; 
+            padding: 20px 40px;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+            border-bottom: 3px solid #B8860B; 
+        }
+
+        .main-header-bar h1 {
+            color: #4B0082; 
+            text-shadow: 1px 1px 1px #ccc; 
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* BOTONES DE NAVEGACIÓN MORADITOS */
+        .history-nav a {
+            color: #4B0082; 
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+            text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+        }
+
+        .history-nav a:hover {
+            color: #E91E63;
+            text-decoration: underline;
+        }
+
+        /* MENÚ */
+        .main-menu {
+            padding: 15px 0;
+            font-size: 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: #4B0082;
+            padding: 0 10px;
+        }
+
+        /* SECCIÓN DE CONTENIDO */
+        .content-section {
+            background-image: url('perrito.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .intro-container, .form-container, .video-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-top: 8px solid #E91E63;
+        }
+
+        .intro-container h2, .form-container h2, .video-container h2 {
+            color: #4B0082;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .intro-container p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #E91E63;
+            font-weight: bold;
+        }
+
+        /* PIE DE PÁGINA UNIFICADO */
+        .main-footer {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('blanco.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #FFFFFF; 
+            min-height: 180px;
+            color: #333; 
+            padding: 50px 20px; 
+            display: flex; 
+            justify-content: space-around; 
+            border-top: 8px solid #E91E63; 
+        }
+
+        .footer-column { width: 30%; }
+        .footer-column h3 { color: #4B0082; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+        
+        .footer-column a { 
+            text-decoration: none; 
+            color: #4B0082; 
+            font-weight: bold;
+        }
+
+        .footer-column a:hover {
+            color: #E91E63;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header-bar">
+        <h1> MAXIPET - Introducción </h1>
+        <div class="history-nav">
+            <a href="inicio1.html">&laquo; Volver</a>
+            <a href="articulo3.html">Adelantar &raquo;</a>
+        </div>
+    </header>
+
+    <div class="main-menu">
+        <a href="inicio1.html">Inicio</a> |
+        <a href="introduccion2.html">Introducción</a> |
+        <a href="articulo3.html">Artículos</a> |
+        <a href="contacto4.html">Contacto</a>
+    </div>
+
+    <div class="content-section">
+        <div class="intro-container">
+            <h2>Bienvenidos a MAXIPET</h2>
+            <p>
+                En <span class="highlight">MAXIPET</span>, es una tienda online en Panamá especializada en productos esenciales para el cuidado y bienestar de las mascotas. Ofrecemos pecheras, collares, artículos de higiene y soluciones de alimentación diseñadas para brindar comodidad, seguridad y calidad a tus compañeros.
+            </p>
+        </div>
+
+        <div class="video-container">
+            <h2>Amamos a nuestras mascotas</h2>
+            <div style="max-width: 600px; margin: 0 auto;">
+                <video width="80%" controls style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <source src="bebe.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-column">
+            <h3>Contactos</h3>
+            <p>Email: proyerizel_2098@gmail.com<br>Teléfono: +507 678 905<br>Panamá.</p>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Enlaces Útiles</h3>
+            <p>
+                <a href="https://www.purina.com.pa" target="_blank">Tips de Nutrición Animal</a><br>
+                <a href="#">Términos y Condiciones</a>
+            </p>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Redes</h3>
+            <p>Instagram: rizelproyect<br>Facebook: rizelproyect</p>
+        </div>
+    </footer>
+</body>
+</html>

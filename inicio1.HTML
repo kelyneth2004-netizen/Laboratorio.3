@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MAXIPET - Inicio</title>
+    <link rel="icon" href="perrito.png" type="image/png">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8F8F8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* HEADER UNIFICADO */
+        .main-header-bar {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('blanco.png'); 
+            background-size: cover; 
+            background-position: center; 
+            padding: 20px 40px;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+            border-bottom: 3px solid #B8860B; 
+        }
+
+        .main-header-bar h1 {
+            color: #4B0082; 
+            text-shadow: 1px 1px 1px #ccc; 
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .history-nav a {
+            color: #4B0082; 
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+            text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+        }
+
+        /* MENÚ */
+        .main-menu {
+            padding: 15px 0;
+            font-size: 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: #4B0082;
+            padding: 0 10px;
+        }
+
+        /* SECCIÓN DE CONTENIDO (PORTADA ACADÉMICA) */
+        .content-section {
+            background-image: url('perrito.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .portada-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            max-width: 900px;
+            width: 100%;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-top: 8px solid #E91E63;
+            text-align: center;
+            line-height: 1.8;
+            position: relative; 
+        }
+
+        /* --- CONTROL DE LOGOS POR SEPARADO --- */
+        .logo-esquina {
+            height: auto;
+            position: absolute;
+            top: 25px; /* Ajusta la altura desde el borde superior */
+        }
+
+        /* AGRANDAR EL LOGO UP (Izquierda) */
+        .logo-up { 
+            left: 30px; 
+            width: 150px; /* Cambia este número para agrandarlo */
+        }
+        
+        /* AGRANDAR EL LOGO FIEC (Derecha) */
+        .logo-fiec { 
+            right: 30px; 
+            width: 185px; /* Cambia este número para agrandarlo */
+        }
+
+        .portada-container h2 {
+            color: #4B0082;
+            margin: 80px 0 10px 0; /* Aumentado para que no choque con los logos */
+            font-size: 28px;
+        }
+
+        .portada-container h3 {
+            color: #333;
+            margin: 20px 0 5px 0;
+            font-size: 22px;
+            text-decoration: underline;
+        }
+
+        .portada-container p {
+            margin: 5px 0;
+            font-size: 20px;
+            color: #444;
+        }
+
+        .integrantes {
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        /* FOOTER UNIFICADO */
+        .main-footer {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('blanco.png');
+            background-size: cover;
+            padding: 50px 20px; 
+            display: flex; 
+            justify-content: space-around; 
+            border-top: 8px solid #E91E63; 
+        }
+
+        .footer-column { width: 30%; }
+        .footer-column h3 { color: #4B0082; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+        .footer-column a { text-decoration: none; color: #4B0082; font-weight: bold; }
+    </style>
+</head>
+
+<body>
+
+<header class="main-header-bar">
+    <h1> MAXIPET - Tienda de Mascotas </h1>
+    <div class="history-nav">
+        <a href="contacto4.html">&laquo; Volver</a>
+        <a href="introduccion2.html">Adelantar &raquo;</a>
+    </div>
+</header>
+
+<div class="main-menu">
+    <a href="inicio1.html">Inicio</a> |
+    <a href="introduccion2.html">Introducción</a> |
+    <a href="articulo3.html">Artículos</a> |
+    <a href="contacto4.html">Contacto</a>
+</div>
+
+<div class="content-section">
+    <div class="portada-container">
+        <img src="UP-logo.png" alt="Logo UP" class="logo-esquina logo-up">
+        <img src="LOGO_FIEC.png" alt="Logo FIEC" class="logo-esquina logo-fiec">
+
+        <h2>Universidad de Panamá</h2>
+        <p>Facultad de Informática, Electrónica y Comunicaciones</p>
+        <p>Licenciatura en Desarrollo de Aplicaciones Tecnológicas</p>
+        
+        <h3>Asignatura:</h3>
+        <p>Desarrollo Avanzado de Aplicaciones Web</p>
+        
+        <h3>Integrantes:</h3>
+        <div class="integrantes">
+            <p>Kelyneth Valdes. 8-1015-254</p>
+            <p>Analeica Mendez. 10-715-1561</p>
+            <p>Caroline Rodriguez. 8-1030-2258</p>
+        </div>
+        
+        <h3>Laboratorio #3:</h3>
+        <p>Sitio Web Estático</p>
+        
+        <h3>Profesora:</h3>
+        <p>Denis Cedeño</p>
+        
+        <h3>Fecha de entrega:</h3>
+        <p>20/04/2026</p>
+    </div>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-column">
+        <h3>Contactos</h3>
+        <p>Email: proyerizel_2098@gmail.com<br>Teléfono: +507 678 905<br>Panamá.</p>
+    </div>
+    
+    <div class="footer-column">
+        <h3>Enlaces Útiles</h3>
+        <p>
+            <a href="https://www.purina.com.pa" target="_blank">Tips de Nutrición Animal</a><br>
+            <a href="#">Términos y Condiciones</a>
+        </p>
+    </div>
+    
+    <div class="footer-column">
+        <h3>Redes</h3>
+        <p>Instagram: rizelproyect<br>Facebook: rizelproyect</p>
+    </div>
+</footer>
+
+</body>
+</html>

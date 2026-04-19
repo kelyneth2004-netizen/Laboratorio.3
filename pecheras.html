@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pecheras</title>
+<link rel="icon" href="perrito.png" type="image/png">
+<style>
+body {
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #4B0082;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.especial img {
+    object-fit: contain;
+    background: white;
+    padding: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Pecheras</h1>
+<a href="articulo3.html">⬅ Volver</a>
+
+<div class="grid">
+
+    <div class="card especial"><img src="pechera1.jpg"><p>Pechera 1</p><p>$10.99</p></div>
+    <div class="card"><img src="pechera2.jpg"><p>Pechera 2</p><p>$5.99</p></div>
+    <div class="card especial"><img src="pechera3.jpg"><p>Pechera 3</p><p>$13.99</p></div>
+
+    <div class="card especial"><img src="pechera4.jpg"><p>Pechera 4</p><p>$9.99</p></div>
+    <div class="card"><img src="pechera5.jpg"><p>Pechera 5</p><p>$6.99</p></div>
+    <div class="card especial"><img src="pechera6.jpg"><p>Pechera 6</p><p>$10.99</p></div>
+
+</div>
+
+</body>
+</html>

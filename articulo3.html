@@ -1,0 +1,246 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MAXIPET - Artículos</title>
+<link rel="icon" href="perrito.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8F8F8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* HEADER Y NAVEGACIÓN UNIFICADOS */
+        .main-header-bar {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('blanco.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-color: #FFFFFF; 
+            padding: 20px 40px;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column; /* Centrado vertical igual que el inicio */
+            align-items: center;    
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+            border-bottom: 3px solid #B8860B; 
+        }
+
+        .main-header-bar h1 {
+            color: #4B0082; 
+            text-shadow: 1px 1px 1px #ccc; 
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .history-nav {
+            margin-top: 5px;
+        }
+
+        .history-nav a {
+            color: #4B0082; 
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+            /* Sombreado blanco para resaltar sobre el fondo */
+            text-shadow: 
+                1px 1px 0 #fff, 
+               -1px -1px 0 #fff,  
+                1px -1px 0 #fff, 
+               -1px 1px 0 #fff; 
+        }
+
+        .history-nav a:hover {
+            color: #E91E63;
+            text-decoration: underline;
+        }
+
+        /* MENÚ UNIFICADO */
+        .main-menu {
+            padding: 15px 0;
+            font-size: 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: #4B0082;
+            padding: 0 10px;
+        }
+
+        /* SECCIÓN DE CONTENIDO */
+        .content-section {
+            background-image: url('perrito.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 30px 20px;
+        }
+        
+        .promo-text {
+            color: #4B0082;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        
+        .project-list {
+            list-style: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .project-list li {
+            background-color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 12px;
+            padding: 15px;
+            border-left: 8px solid #E91E63;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-list a {
+            text-decoration: none;
+            color: #4B0082;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .project-list span {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        /* PIE DE PÁGINA UNIFICADO */
+        .main-footer {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('blanco.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #FFFFFF; 
+            min-height: 180px;
+            color: #333; 
+            padding: 50px 20px; 
+            display: flex; 
+            justify-content: space-around; 
+            border-top: 8px solid #E91E63; 
+        }
+
+        .footer-column { width: 30%; }
+
+        .footer-column h3 {
+            color: #4B0082; 
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .footer-column a {
+            text-decoration: none;
+            color: #4B0082; /* Enlaces morados para resaltar */
+            font-weight: bold;
+        }
+        
+        .footer-column a:hover {
+            color: #E91E63;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header-bar">
+        <h1> MAXIPET - Artículos </h1>
+        <div class="history-nav">
+            <a href="introduccion2.html">&laquo; Volver</a>
+            <a href="contacto4.html">Adelantar &raquo;</a>
+        </div>
+    </header>
+
+    <div class="main-menu">
+        <a href="inicio1.html">Inicio</a> |
+        <a href="introduccion2.html">Introducción</a> |
+        <a href="articulo3.html">Artículos</a> |
+        <a href="contacto4.html">Contacto</a>
+    </div>
+
+    <div class="content-section">
+        <div style="text-align: center;">
+            <h2 class="promo-text">Artículos Disponibles</h2>
+
+            <ul class="project-list">
+                <li>
+                    <a href="pecheras.html">
+                        Pecheras
+                        <span>Tallas medianas, grandes y chicas para todas las razas.</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="higiene.html">
+                        Higiene y Cuidados
+                        <span>Bolsas higiénicas y herramientas de aseo.</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="platos.html">
+                        Platos y dispensadores
+                        <span>Soluciones modernas para la alimentación.</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="collares.html">
+                        Collares
+                        <span>Estilo y seguridad en cuero y materiales sintéticos.</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-column">
+            <h3>Contactos</h3>
+            <p>
+                Email: proyerizel_2098@gmail.com<br>
+                Teléfono: +507 678 905<br>
+                Dirección: Ciudad de Panamá, Panamá.
+            </p>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Enlaces Útiles</h3>
+            <p>
+                <a href="https://www.purina.com.pa" target="_blank">Tips de Nutrición Animal</a><br>
+                <a href="#">Términos y Condiciones</a><br>
+                <a href="#">Política de Privacidad</a>
+            </p>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Redes</h3>
+            <p>Instagram: rizelproyect<br>Facebook: rizelproyect</p>
+        </div>
+    </footer>
+
+</body>
+</html>
